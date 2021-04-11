@@ -18,4 +18,10 @@
     <string name="buttons_and_chairs">Кнопки и табуретки</string>
     <string name="fields">Поля выпаса ввода</string>
     <string name="checkboxes">Чекбокс на радио</string>
+    <string name="input_fields">Поля для ввода разного типа</string>
+    <string name="one_line_text">Однострочный текст</string>
+    <string name="five_line_text">Текст на 5 строк</string>
+    <string name="password">Пароль</string>
+    <string name="year">Год</string>
+    <string name="hide_keyboard">Спрятать клавиатуру</string>
 </resources>

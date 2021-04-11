@@ -1,8 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_keyboard_backspace"
+        app:navigationIconTint="@color/white" />
 
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/input_fields"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/oneLineEditText"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/edit_text_style"
+        android:elevation="2dp"
+        android:hint="@string/one_line_text"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLength="20"
+        android:padding="10sp"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <EditText
+        android:id="@+id/machLineEditText"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/edit_text_style"
+        android:elevation="2dp"
+        android:hint="@string/five_line_text"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:padding="10sp"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@+id/oneLineEditText" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/edit_text_style"
+        android:elevation="2dp"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:padding="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/dataEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/machLineEditText" />
+
+    <EditText
+        android:id="@+id/dataEditText"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/edit_text_style"
+        android:elevation="2dp"
+        android:hint="@string/year"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:maxLength="4"
+        android:padding="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/passwordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/machLineEditText" />
+
+    <Button
+        android:id="@+id/hideKeyboardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:elevation="4dp"
+        android:text="@string/hide_keyboard"
+        app:layout_constraintEnd_toEndOf="@id/dataEditText"
+        app:layout_constraintTop_toBottomOf="@id/dataEditText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
