@@ -10,9 +10,9 @@
         android:layout_height="wrap_content"
         android:background="@color/green"
         android:elevation="4dp"
-        app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_keyboard_backspace"
-        app:navigationIconTint="@color/white" />
+        app:navigationIconTint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/text"
@@ -36,12 +36,12 @@
         android:background="@drawable/edit_text_style"
         android:elevation="2dp"
         android:hint="@string/one_line_text"
-        android:importantForAutofill="no"
-        android:inputType="text"
         android:maxLength="20"
+        android:inputType="text"
         android:padding="10sp"
         android:singleLine="true"
-        app:layout_constraintTop_toBottomOf="@+id/text" />
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/machLineEditText"
@@ -53,13 +53,13 @@
         android:background="@drawable/edit_text_style"
         android:elevation="2dp"
         android:hint="@string/five_line_text"
-        android:importantForAutofill="no"
         android:inputType="textMultiLine"
         android:padding="10sp"
         android:scrollbars="vertical"
         android:scrollHorizontally="false"
         android:singleLine="true"
-        app:layout_constraintTop_toBottomOf="@+id/oneLineEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/oneLineEditText"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/passwordEditText"
@@ -70,13 +70,13 @@
         android:background="@drawable/edit_text_style"
         android:elevation="2dp"
         android:hint="@string/password"
-        android:importantForAutofill="no"
         android:inputType="numberPassword"
         android:maxLength="4"
         android:padding="10sp"
         app:layout_constraintEnd_toStartOf="@+id/dataEditText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/machLineEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/machLineEditText"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/dataEditText"
@@ -88,13 +88,13 @@
         android:background="@drawable/edit_text_style"
         android:elevation="2dp"
         android:hint="@string/year"
-        android:importantForAutofill="no"
         android:inputType="date"
         android:maxLength="4"
         android:padding="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/passwordEditText"
-        app:layout_constraintTop_toBottomOf="@+id/machLineEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/machLineEditText"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/hideKeyboardButton"
