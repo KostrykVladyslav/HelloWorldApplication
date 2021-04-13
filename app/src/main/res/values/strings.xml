@@ -24,4 +24,12 @@
     <string name="password">Пароль</string>
     <string name="year">Год</string>
     <string name="hide_keyboard">Спрятать клавиатуру</string>
+    <string name="button_off_applinces">Кнопка Приборы отключает Приборы</string>
+    <string name="applinces">Приборы</string>
+    <string name="off_radio">Выключить радио</string>
+    <string name="off_slider">Выключить ползунок</string>
+    <string name="choose_variand_by_radio">Выбрать вариант по радио</string>
+    <string name="v_1">Вариант 1</string>
+    <string name="v_2">Вариант 2</string>
+    <string name="v_3">Вариант 3</string>
 </resources>
