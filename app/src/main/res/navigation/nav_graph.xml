@@ -11,19 +11,13 @@
         tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_MainFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment"
-            app:enterAnim="@animator/nav_default_enter_anim"
-            app:exitAnim="@animator/nav_default_exit_anim"/>
+            app:destination="@id/FirstFragment"/>
         <action
             android:id="@+id/action_MainFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment"
-            app:enterAnim="@animator/nav_default_enter_anim"
-            app:exitAnim="@animator/nav_default_exit_anim"/>
+            app:destination="@id/SecondFragment"/>
         <action
             android:id="@+id/action_MainFragment_to_ThirdFragment"
-            app:destination="@id/ThirdFragment"
-            app:enterAnim="@animator/nav_default_enter_anim"
-            app:exitAnim="@animator/nav_default_exit_anim"/>
+            app:destination="@id/ThirdFragment"/>
     </fragment>
 
     <fragment
