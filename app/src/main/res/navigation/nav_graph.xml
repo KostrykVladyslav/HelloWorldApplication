@@ -36,8 +36,7 @@
         android:id="@+id/SecondFragment"
         android:name="com.example.helloworldapplication.fragments.SecondFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-    </fragment>
+        tools:layout="@layout/fragment_second"/>
 
 
     <fragment
