@@ -13,7 +13,7 @@
         android:fontFamily="sans-serif-thin"
         android:text="@string/hello"
         android:textColor="@color/black"
-        android:textSize="50sp"
+        android:textSize="@dimen/text_size"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,19 +22,19 @@
     <ImageView
         android:id="@+id/imageView"
         android:src="@mipmap/cat_image"
-        android:layout_marginBottom="100sp"
+        android:layout_marginBottom="@dimen/image_margin"
         app:layout_constraintTop_toBottomOf="@+id/textViewHello"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/buttonFirst"
-        android:layout_width="200sp"
-        android:layout_height="200sp"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
         android:contentDescription="@string/todo" />
 
     <TextView
         android:text="@string/world"
         android:textColor="@color/black"
-        android:textSize="50sp"
+        android:textSize="@dimen/text_size"
         android:fontFamily="sans-serif-thin"
         android:id="@+id/textViewWorld"
         android:layout_width="wrap_content"
@@ -47,10 +47,10 @@
     <Button
         android:id="@+id/buttonFirst"
         android:layout_height="wrap_content"
-        android:layout_width="250sp"
+        android:layout_width="@dimen/buttons_width"
         android:text="@string/buttons_and_chairs"
         android:background="@drawable/button_round"
-        android:layout_marginTop="50sp"
+        android:layout_marginTop="@dimen/main_button_margin_top"
         app:layout_constraintBottom_toTopOf="@+id/buttonSecond"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,10 +59,10 @@
     <Button
         android:id="@+id/buttonSecond"
         android:layout_height="wrap_content"
-        android:layout_width="250sp"
+        android:layout_width="@dimen/buttons_width"
         android:text="@string/fields"
         android:background="@drawable/button_round"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="@dimen/elements_margin"
         app:layout_constraintBottom_toBottomOf="@+id/buttonThird"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,11 +70,11 @@
 
     <Button
         android:id="@+id/buttonThird"
-        android:layout_width="250sp"
+        android:layout_width="@dimen/buttons_width"
         android:layout_height="wrap_content"
         android:text="@string/checkboxes"
         android:background="@drawable/button_round"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="@dimen/elements_margin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonSecond" />

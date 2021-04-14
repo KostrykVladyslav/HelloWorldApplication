@@ -1,3 +1,19 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="buttons_width">300sp</dimen>
+    <dimen name="text_size">50sp</dimen>
+    <dimen name="image_margin">100sp</dimen>
+    <dimen name="image_width">200sp</dimen>
+    <dimen name="image_height">200sp</dimen>
+    <dimen name="elements_margin">20sp</dimen>
+    <dimen name="main_button_margin_top">50sp</dimen>
+    <dimen name="elevation_toolbar">4dp</dimen>
+    <dimen name="less_margin">10sp</dimen>
+    <dimen name="edit_text_padding">10sp</dimen>
+    <dimen name="much_line_edit_height">150sp</dimen>
+    <dimen name="view_elevation">2dp</dimen>
+    <dimen name="password_edit_width">250sp</dimen>
+    <dimen name="much_width">0sp</dimen>
+    <dimen name="less_text_size">20sp</dimen>
+    <dimen name="radio_group_margin_top">80sp</dimen>
 </resources>
